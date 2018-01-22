@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jquery draggable</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+	.card {display:inline-block;height:auto;padding:0 5px;width:auto; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+	$(function() {
+		$(".card").draggable({
+			grid: [92, 130],
+			snap:true,
+			snapMode: 'outer',
+			snapTolerance: 20
+		});
+	});
+  </script>
+</head>
+<body>
+	<div class="card">
+		<img src="a.gif" class="ui-widget-content">
+	</div>
+    <div class="card">
+		<img src="e.gif" class="ui-widget-content">
+	</div>
+	<div class="card">
+		<img src="k.gif" class="ui-widget-content">
+	</div>
+</body>
+</html>
